@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foodie - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <div class="logo">Foodie<span>.</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#cart" class="cart-btn">My Cart 🛒</a>
+    </header>
+
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <p class="welcome">WELCOME TO FOODIE RESTAURANT</p>
+
+            <h1>Delicious Food <br> Made With Love.</h1>
+
+            <p>
+                Enjoy delicious meals prepared with fresh ingredients.
+                Order your favourite food and enjoy every bite!
+            </p>
+
+            <a href="#menu" class="main-btn">Explore Menu</a>
+
+        </div>
+
+        <div class="home-image">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700"
+            alt="Delicious Pizza">
+        </div>
+
+    </section>
+
+
+    <!-- Menu Section -->
+
+    <section class="menu" id="menu">
+
+        <div class="section-title">
+
+            <p>OUR SPECIAL MENU</p>
+
+            <h2>Explore Our Delicious Food</h2>
+
+            <input type="text" id="search"
+            placeholder="Search your favourite food...">
+
+        </div>
+
+
+        <!-- Categories -->
+
+        <div class="categories">
+
+            <button onclick="filterFood('All')">All</button>
+
+            <button onclick="filterFood('Pizza')">Pizza</button>
+
+            <button onclick="filterFood('Burger')">Burger</button>
+
+            <button onclick="filterFood('Drinks')">Drinks</button>
+
+            <button onclick="filterFood('Dessert')">Desserts</button>
+
+        </div>
+
+
+        <!-- Food Items -->
+
+        <div class="food-container" id="food-container">
+
+        </div>
+
+    </section>
+
+
+    <!-- Cart Section -->
+
+    <section class="cart" id="cart">
+
+        <div class="section-title">
+
+            <p>YOUR ORDER</p>
+
+            <h2>Shopping Cart 🛒</h2>
+
+        </div>
+
+        <div id="cart-items">
+
+            <p class="empty">Your cart is empty!</p>
+
+        </div>
+
+        <div class="total">
+
+            <h3>Total Amount: ₹<span id="total">0</span></h3>
+
+            <button onclick="checkout()" class="main-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Checkout Section -->
+
+    <section class="checkout" id="checkout">
+
+        <div class="section-title">
+
+            <p>COMPLETE YOUR ORDER</p>
+
+            <h2>Customer Details</h2>
+
+        </div>
+
+        <form id="order-form">
+
+            <input type="text" id="name"
+            placeholder="Enter Your Name" required>
+
+            <input type="tel" id="phone"
+            placeholder="Enter Phone Number"
+            pattern="[0-9]{10}" required>
+
+            <textarea id="address"
+            placeholder="Enter Your Address" required></textarea>
+
+            <button type="submit" class="main-btn">
+                Place Order
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+
+        <div class="section-title">
+
+            <p>ABOUT US</p>
+
+            <h2>Welcome To Foodie Restaurant</h2>
+
+        </div>
+
+        <p>
+            Foodie Restaurant is a place where taste meets happiness.
+            We serve delicious food prepared with fresh ingredients
+            and lots of love. Our aim is to make every meal special
+            for our customers.
+        </p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <footer id="contact">
+
+        <h2>Foodie<span>.</span></h2>
+
+        <p>Good Food, Good Mood!</p>
+
+        <p>Contact: 9876543210</p>
+
+        <p>Email: foodie@gmail.com</p>
+
+        <p class="copyright">
+            © 2026 Foodie Restaurant. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
